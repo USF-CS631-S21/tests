@@ -9,6 +9,10 @@ You will first clone this repository. In contains the tests for the projects and
 
 ~/cs631
 
+So, after you clone, you should have:
+
+~/cs631/tests
+
 You will need to clone the autograder repo here:
 
 https://github.com/phpeterson-usf/autograder
@@ -33,7 +37,7 @@ Now edit the default config file which is located here:
 
 ~/.config/grade/config.toml
 
-You need the following option in this file:
+You need only the following option in this file:
 
 testspath = "/home/pi/cs631/tests"
 
@@ -49,7 +53,6 @@ $ grade test -p lab01
 
 If you miss points you can run the grade program in verbose mode to see how your output differs from the expected output:
 
-$ grade test -p lab01 -v
 $ grade test -p lab01 -v
 ===[01]===actual
 TK_INTLIT("1")
