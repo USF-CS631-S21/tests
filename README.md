@@ -3,7 +3,7 @@ Project and lab tests for autograding
 
 # Instructions
 
-To use the autograder you will need to do some setup first. The good news is that once you get thing set up, you will just pull new tests (and maybe updates to the autograder) as needed throughout the semester.
+To use the autograder you will need to do some setup first. The good news is that once you get things set up, you will just pull new tests (and maybe updates to the autograder) as needed throughout the semester.
 
 You will first clone this repository. In contains the tests for the projects and labs. It will be updated with tests for new projects and labs throughout the semester. You might consider putting it in: 
 
