@@ -1,0 +1,97 @@
+[[tests]]
+name = "01"
+input = ["./lab01", "1"]
+expected = """
+TK_INTLIT("1")
+TK_EOT("")
+"""
+rubric = 10
+
+[[tests]]
+name = "02"
+input = ["./lab01", "1 + 2"]
+expected = """
+TK_INTLIT("1")
+TK_PLUS("+")
+TK_INTLIT("2")
+TK_EOT("")
+"""
+rubric = 10
+
+[[tests]]
+name = "03"
+input = ["./lab01", "1 + 2 * 3 / 4"]
+expected = """
+TK_INTLIT("1")
+TK_PLUS("+")
+TK_INTLIT("2")
+TK_MULT("*")
+TK_INTLIT("3")
+TK_DIV("/")
+TK_INTLIT("4")
+TK_EOT("")
+"""
+rubric = 20
+
+[[tests]]
+name = "04"
+input = ["./lab01", "1+2*3/4"]
+expected = """
+TK_INTLIT("1")
+TK_PLUS("+")
+TK_INTLIT("2")
+TK_MULT("*")
+TK_INTLIT("3")
+TK_DIV("/")
+TK_INTLIT("4")
+TK_EOT("")
+"""
+rubric = 10
+
+[[tests]]
+name = "05"
+input = ["./lab01", "(0b1010 >> 2) & 0b01"]
+expected = """
+TK_LPAREN("(")
+TK_BINLIT("1010")
+TK_LSR(">>")
+TK_INTLIT("2")
+TK_RPAREN(")")
+TK_AND("&")
+TK_BINLIT("01")
+TK_EOT("")
+"""
+rubric = 20
+
+[[tests]]
+name = "06"
+input = ["./lab01", "0b11001001"]
+expected = """
+TK_BINLIT("11001001")
+TK_EOT("")
+"""
+rubric = 10
+
+[[tests]]
+name = "07"
+input = ["./lab01", "123 0b101 + - * / >> >- << ~ & | ^ ( )"]
+expected = """
+TK_INTLIT("123")
+TK_BINLIT("101")
+TK_PLUS("+")
+TK_MINUS("-")
+TK_MULT("*")
+TK_DIV("/")
+TK_LSR(">>")
+TK_ASR(">-")
+TK_LSL("<<")
+TK_NOT("~")
+TK_AND("&")
+TK_OR("|")
+TK_XOR("^")
+TK_LPAREN("(")
+TK_RPAREN(")")
+TK_EOT("")
+"""
+rubric = 20
+
