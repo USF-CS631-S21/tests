@@ -21,7 +21,7 @@ You will need to clone the autograder repo here:
 
 https://github.com/phpeterson-usf/autograder
 
-This requires a relatively new version of Python 3 and the Python toml module. See the instruction in the autograder README.
+This requires a relatively new version of Python 3 and the Python toml module. See the install instructions in the autograder README.
 
 You need to put the `grade` program on your `PATH`.
 
