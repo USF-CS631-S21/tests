@@ -82,6 +82,24 @@ EXPR OPER2 AND
 rubric = 10
 
 [[tests]]
+name = "08"
+input = ["./lab02", "-e", "---------913"]
+expected = """
+EXPR OPER1 MINUS
+..EXPR OPER1 MINUS
+....EXPR OPER1 MINUS
+......EXPR OPER1 MINUS
+........EXPR OPER1 MINUS
+..........EXPR OPER1 MINUS
+............EXPR OPER1 MINUS
+..............EXPR OPER1 MINUS
+................EXPR OPER1 MINUS
+..................EXPR INTVAL 913
+"""
+rubric = 10
+
+
+[[tests]]
 name = "09"
 input = ["./lab02", "-e", "(---(0b11001001) + (0b1111 - 0b10)) - (1-2+(3 + 4))"]
 expected = """
