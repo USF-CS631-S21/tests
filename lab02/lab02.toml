@@ -1,0 +1,114 @@
+[[tests]]
+name = "01"
+input = ["./lab02", "-e", "1 + 2"]
+expected = """
+EXPR OPER2 PLUS
+..EXPR INTVAL 1
+..EXPR INTVAL 2
+"""
+rubric = 10
+
+[[tests]]
+name = "02"
+input = ["./lab02", "-e", "(1 + 2) * 3"]
+expected = """
+EXPR OPER2 MULT
+..EXPR OPER2 PLUS
+....EXPR INTVAL 1
+....EXPR INTVAL 2
+..EXPR INTVAL 3
+"""
+rubric = 10
+
+[[tests]]
+name = "03"
+input = ["./lab02", "-e", "4 * (10 / 5)"]
+expected = """
+EXPR OPER2 MULT
+..EXPR INTVAL 4
+..EXPR OPER2 DIV
+....EXPR INTVAL 10
+....EXPR INTVAL 5
+"""
+rubric = 10
+
+[[tests]]
+name = "04"
+input = ["./lab02", "-e", "(2 * (3 + (1 + 1)))"]
+expected = """
+EXPR OPER2 MULT
+..EXPR INTVAL 2
+..EXPR OPER2 PLUS
+....EXPR INTVAL 3
+....EXPR OPER2 PLUS
+......EXPR INTVAL 1
+......EXPR INTVAL 1
+"""
+rubric = 10
+
+[[tests]]
+name = "05"
+input = ["./lab02", "-e", "-4 + 3"]
+expected = """
+EXPR OPER2 PLUS
+..EXPR OPER1 MINUS
+....EXPR INTVAL 4
+..EXPR INTVAL 3
+"""
+rubric = 10
+
+[[tests]]
+name = "06"
+input = ["./lab02", "-e", "-4 + -4"]
+expected = """
+EXPR OPER2 PLUS
+..EXPR OPER1 MINUS
+....EXPR INTVAL 4
+..EXPR OPER1 MINUS
+....EXPR INTVAL 4
+"""
+rubric = 10
+
+[[tests]]
+name = "07"
+input = ["./lab02", "-e", "(0b1010 >> 2) & 0b01"]
+expected = """
+EXPR OPER2 AND
+..EXPR OPER2 LSR
+....EXPR INTVAL 10
+....EXPR INTVAL 2
+..EXPR INTVAL 1
+"""
+rubric = 10
+
+[[tests]]
+name = "09"
+input = ["./lab02", "-e", "(---(0b11001001) + (0b1111 - 0b10)) - (1-2+(3 + 4))"]
+expected = """
+EXPR OPER2 MINUS
+..EXPR OPER2 PLUS
+....EXPR OPER1 MINUS
+......EXPR OPER1 MINUS
+........EXPR OPER1 MINUS
+..........EXPR INTVAL 201
+....EXPR OPER2 MINUS
+......EXPR INTVAL 15
+......EXPR INTVAL 2
+..EXPR OPER2 PLUS
+....EXPR OPER2 MINUS
+......EXPR INTVAL 1
+......EXPR INTVAL 2
+....EXPR OPER2 PLUS
+......EXPR INTVAL 3
+......EXPR INTVAL 4
+"""
+rubric = 10
+
+[[tests]]
+name = "10"
+input = ["./lab02", "-e", "(1 + ((2 +3) + 4"]
+expected = """
+parse_error: Missing right paren
+"""
+rubric = 10
+
