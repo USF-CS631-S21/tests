@@ -80,7 +80,7 @@ min_s(-9, -10) = -10
 rubric = 10
 
 [[tests]]
-name = "09"
+name = "10"
 input = ["./lab03", "min", "99", "99"]
 expected = """
 min_c(99, 99) = 99
