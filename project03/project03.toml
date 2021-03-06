@@ -2,8 +2,8 @@
 name = "01"
 input = ["./project03", "substr", "aaxxyy", "aa"]
 expected = """
-substr_c(aaxxyy, aa) = 1 0 
-substr_s(aaxxyy, aa) = 1 0 
+substr_c(aaxxyy, aa) = 1 0
+substr_s(aaxxyy, aa) = 1 0
 """
 rubric = 5
 
@@ -11,8 +11,8 @@ rubric = 5
 name = "02"
 input = ["./project03", "substr", "xxaayy", "aa"]
 expected = """
-substr_c(xxaayy, aa) = 1 2 
-substr_s(xxaayy, aa) = 1 2 
+substr_c(xxaayy, aa) = 1 2
+substr_s(xxaayy, aa) = 1 2
 """
 rubric = 5
 
@@ -20,8 +20,8 @@ rubric = 5
 name = "03"
 input = ["./project03", "substr", "xxyyaa", "aa"]
 expected = """
-substr_c(xxyyaa, aa) = 1 4 
-substr_s(xxyyaa, aa) = 1 4 
+substr_c(xxyyaa, aa) = 1 4
+substr_s(xxyyaa, aa) = 1 4
 """
 rubric = 5
 
@@ -29,8 +29,8 @@ rubric = 5
 name = "04"
 input = ["./project03", "substr", "xxyyaa", "aa"]
 expected = """
-substr_c(xxyyaa, aa) = 1 4 
-substr_s(xxyyaa, aa) = 1 4 
+substr_c(xxyyaa, aa) = 1 4
+substr_s(xxyyaa, aa) = 1 4
 """
 rubric = 5
 
@@ -38,8 +38,8 @@ rubric = 5
 name = "05"
 input = ["./project03", "substr", "xxyyaa", "bb"]
 expected = """
-substr_c(xxyyaa, bb) = 0 0 
-substr_s(xxyyaa, bb) = 0 0 
+substr_c(xxyyaa, bb) = 0 0
+substr_s(xxyyaa, bb) = 0 0
 """
 rubric = 5
 
