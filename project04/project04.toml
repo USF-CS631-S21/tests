@@ -1,0 +1,299 @@
+[[tests]]
+name = "01"
+input = ["./project04", "max3", "1", "3", "2"]
+expected = """
+max3_c(1, 3, 2) = 3
+max3_s(1, 3, 2) = 3
+max3_e(1, 3, 2) = 3
+"""
+rubric = 2
+
+[[tests]]
+name = "02"
+input = ["./project04", "max3", "-1", "-10", "-20"]
+expected = """
+max3_c(-1, -10, -20) = -1
+max3_s(-1, -10, -20) = -1
+max3_e(-1, -10, -20) = -1
+"""
+rubric = 2
+
+[[tests]]
+name = "03"
+input = ["./project04", "find_max", "5", "1", "2", "5", "3", "4"]
+expected = """
+find_max_c([1,2,5,3,4], 5) = 5
+find_max_s([1,2,5,3,4], 5) = 5
+find_max_e([1,2,5,3,4], 5) = 5
+"""
+rubric = 2
+
+[[tests]]
+name = "04"
+input = ["./project04", "find_max", "10", "-1", "99", "1", "2", "3", "4", "5", "6", "7", "0"]
+expected = """
+find_max_c([-1,99,1,2,3,4,5,6,7,0], 10) = 99
+find_max_s([-1,99,1,2,3,4,5,6,7,0], 10) = 99
+find_max_e([-1,99,1,2,3,4,5,6,7,0], 10) = 99
+"""
+rubric = 2
+
+[[tests]]
+name = "05"
+input = ["./project04", "fib_rec", "5"]
+expected = """
+fib_rec_c(5) = 5
+fib_rec_s(5) = 5
+fib_rec_e(5) = 5
+"""
+rubric = 2
+
+[[tests]]
+name = "06"
+input = ["./project04", "fib_rec", "10"]
+expected = """
+fib_rec_c(10) = 55
+fib_rec_s(10) = 55
+fib_rec_e(10) = 55
+"""
+rubric = 2
+
+[[tests]]
+name = "07"
+input = ["./project04", "fib_rec", "19"]
+expected = """
+fib_rec_c(19) = 4181
+fib_rec_s(19) = 4181
+fib_rec_e(19) = 4181
+"""
+rubric = 2
+
+[[tests]]
+name = "08"
+input = ["./project04", "stolower", "FooBar"]
+expected = """
+stolower_c(FooBar) = foobar
+stolower_s(FooBar) = foobar
+stolower_e(FooBar) = foobar
+"""
+rubric = 2
+
+[[tests]]
+name = "09"
+input = ["./project04", "stolower", "\"ALL UPPER CASE\""]
+expected = """
+stolower_c("ALL UPPER CASE") = "all upper case"
+stolower_s("ALL UPPER CASE") = "all upper case"
+stolower_e("ALL UPPER CASE") = "all upper case"
+"""
+rubric = 2
+
+[[tests]]
+name = "10"
+input = ["./project04", "stolower", "\"Coffee > $5.00 is too EXPENSIVE\""]
+expected = """
+stolower_c("Coffee > $5.00 is too EXPENSIVE") = "coffee > $5.00 is too expensive"
+stolower_s("Coffee > $5.00 is too EXPENSIVE") = "coffee > $5.00 is too expensive"
+stolower_e("Coffee > $5.00 is too EXPENSIVE") = "coffee > $5.00 is too expensive"
+"""
+rubric = 2
+
+[[tests]]
+name = "11"
+input = ["./project04", "substr", "aaxxyy", "aa"]
+expected = """
+substr_c(aaxxyy, aa) = 1 0
+substr_s(aaxxyy, aa) = 1 0
+substr_e(aaxxyy, aa) = 1 0
+"""
+rubric = 2
+
+[[tests]]
+name = "12"
+input = ["./project04", "substr", "xxaayy", "aa"]
+expected = """
+substr_c(xxaayy, aa) = 1 2
+substr_s(xxaayy, aa) = 1 2
+substr_e(xxaayy, aa) = 1 2
+"""
+rubric = 2
+
+[[tests]]
+name = "13"
+input = ["./project04", "substr", "xxyyaa", "aa"]
+expected = """
+substr_c(xxyyaa, aa) = 1 4
+substr_s(xxyyaa, aa) = 1 4
+substr_e(xxyyaa, aa) = 1 4
+"""
+rubric = 2
+
+[[tests]]
+name = "14"
+input = ["./project04", "substr", "xxyyaa", "aa"]
+expected = """
+substr_c(xxyyaa, aa) = 1 4
+substr_s(xxyyaa, aa) = 1 4
+substr_e(xxyyaa, aa) = 1 4
+"""
+rubric = 2
+
+[[tests]]
+name = "15"
+input = ["./project04", "substr", "xxyyaa", "bb"]
+expected = """
+substr_c(xxyyaa, bb) = 0 0
+substr_s(xxyyaa, bb) = 0 0
+substr_e(xxyyaa, bb) = 0 0
+"""
+rubric = 2
+
+[[tests]]
+name = "16"
+input = ["./project04", "matches", "aaaa", "aa"]
+expected = """
+matches_c(aaaa, aa) = 3
+matches_s(aaaa, aa) = 3
+matches_e(aaaa, aa) = 3
+"""
+rubric = 2
+
+[[tests]]
+name = "17"
+input = ["./project04", "matches", "xxaaxxaaxxaaxx", "aa"]
+expected = """
+matches_c(xxaaxxaaxxaaxx, aa) = 3
+matches_s(xxaaxxaaxxaaxx, aa) = 3
+matches_e(xxaaxxaaxxaaxx, aa) = 3
+"""
+rubric = 2
+
+[[tests]]
+name = "18"
+input = ["./project04", "matches", "xxaaaaxxaaaaxxaaaaxx", "aa"]
+expected = """
+matches_c(xxaaaaxxaaaaxxaaaaxx, aa) = 9
+matches_s(xxaaaaxxaaaaxxaaaaxx, aa) = 9
+matches_e(xxaaaaxxaaaaxxaaaaxx, aa) = 9
+"""
+rubric = 2
+
+[[tests]]
+name = "19"
+input = ["./project04", "matches", "foobarfobarfobarfoo", "foo"]
+expected = """
+matches_c(foobarfobarfobarfoo, foo) = 2
+matches_s(foobarfobarfobarfoo, foo) = 2
+matches_e(foobarfobarfobarfoo, foo) = 2
+"""
+rubric = 2
+
+[[tests]]
+name = "20"
+input = ["./project04", "matches", "foobarfobarfobarfoo", "baa"]
+expected = """
+matches_c(foobarfobarfobarfoo, baa) = 0
+matches_s(foobarfobarfobarfoo, baa) = 0
+matches_e(foobarfobarfobarfoo, baa) = 0
+"""
+rubric = 2
+
+[[tests]]
+name = "21"
+input = ["./project04", "merge", "1", "1"]
+expected = """
+merge_c([1], 0, 1, aux[]) = [1]
+merge_s([1], 0, 1, aux[]) = [1]
+merge_e([1], 0, 1, aux[]) = [1]
+"""
+rubric = 2
+
+[[tests]]
+name = "22"
+input = ["./project04", "merge", "2", "1", "1"]
+expected = """
+merge_c([1,1], 0, 2, aux[]) = [1,1]
+merge_s([1,1], 0, 2, aux[]) = [1,1]
+merge_e([1,1], 0, 2, aux[]) = [1,1]
+"""
+rubric = 2
+
+[[tests]]
+name = "23"
+input = ["./project04", "merge", "4", "2", "4", "1", "3"]
+expected = """
+merge_c([2,4,1,3], 0, 4, aux[]) = [1,2,3,4]
+merge_s([2,4,1,3], 0, 4, aux[]) = [1,2,3,4]
+merge_e([2,4,1,3], 0, 4, aux[]) = [1,2,3,4]
+"""
+rubric = 2
+
+[[tests]]
+name = "24"
+input = ["./project04", "merge", "8", "2", "4", "8", "10", "1", "3", "7", "9"]
+expected = """
+merge_c([2,4,8,10,1,3,7,9], 0, 8, aux[]) = [1,2,3,4,7,8,9,10]
+merge_s([2,4,8,10,1,3,7,9], 0, 8, aux[]) = [1,2,3,4,7,8,9,10]
+merge_e([2,4,8,10,1,3,7,9], 0, 8, aux[]) = [1,2,3,4,7,8,9,10]
+"""
+rubric = 2
+
+[[tests]]
+name = "25"
+input = ["./project04", "merge", "10", "2", "4", "8", "10", "11", "1", "3", "7", "9", "99"]
+expected = """
+merge_c([2,4,8,10,11,1,3,7,9,99], 0, 10, aux[]) = [1,2,3,4,7,8,9,10,11,99]
+merge_s([2,4,8,10,11,1,3,7,9,99], 0, 10, aux[]) = [1,2,3,4,7,8,9,10,11,99]
+merge_e([2,4,8,10,11,1,3,7,9,99], 0, 10, aux[]) = [1,2,3,4,7,8,9,10,11,99]
+"""
+rubric = 2
+
+[[tests]]
+name = "26"
+input = ["./project04", "merge_sort", "1", "1"]
+expected = """
+merge_sort_c([1], 0, 1, aux[]) = [1]
+merge_sort_s([1], 0, 1, aux[]) = [1]
+merge_sort_e([1], 0, 1, aux[]) = [1]
+"""
+rubric = 2
+
+[[tests]]
+name = "27"
+input = ["./project04", "merge_sort", "2", "2", "1"]
+expected = """
+merge_sort_c([2,1], 0, 2, aux[]) = [1,2]
+merge_sort_s([2,1], 0, 2, aux[]) = [1,2]
+merge_sort_e([2,1], 0, 2, aux[]) = [1,2]
+"""
+rubric = 2
+
+[[tests]]
+name = "28"
+input = ["./project04", "merge_sort", "4", "4", "3", "1", "2"]
+expected = """
+merge_sort_c([4,3,1,2], 0, 4, aux[]) = [1,2,3,4]
+merge_sort_s([4,3,1,2], 0, 4, aux[]) = [1,2,3,4]
+merge_sort_e([4,3,1,2], 0, 4, aux[]) = [1,2,3,4]
+"""
+rubric = 2
+
+[[tests]]
+name = "29"
+input = ["./project04", "merge_sort", "8", "1000", "10", "100", "1", "2000", "2", "20", "2"]
+expected = """
+merge_sort_c([1000,10,100,1,2000,2,20,2], 0, 8, aux[]) = [1,2,2,10,20,100,1000,2000]
+merge_sort_s([1000,10,100,1,2000,2,20,2], 0, 8, aux[]) = [1,2,2,10,20,100,1000,2000]
+merge_sort_e([1000,10,100,1,2000,2,20,2], 0, 8, aux[]) = [1,2,2,10,20,100,1000,2000]
+"""
+rubric = 2
+
+[[tests]]
+name = "30"
+input = ["./project04", "merge_sort", "21", "100", "80", "90", "70", "60", "50", "40", "30", "20", "10", "10", "8", "9", "7", "6", "5", "4", "3", "2", "1", "0"]
+expected = """
+merge_sort_c([100,80,90,70,60,50,40,30,20,10,10,8,9,7,6,5,4,3,2,1,0], 0, 21, aux[]) = [0,1,2,3,4,5,6,7,8,9,10,10,20,30,40,50,60,70,80,90,100]
+merge_sort_s([100,80,90,70,60,50,40,30,20,10,10,8,9,7,6,5,4,3,2,1,0], 0, 21, aux[]) = [0,1,2,3,4,5,6,7,8,9,10,10,20,30,40,50,60,70,80,90,100]
+merge_sort_e([100,80,90,70,60,50,40,30,20,10,10,8,9,7,6,5,4,3,2,1,0], 0, 21, aux[]) = [0,1,2,3,4,5,6,7,8,9,10,10,20,30,40,50,60,70,80,90,100]
+"""
+rubric = 2
