@@ -1,0 +1,53 @@
+[project]
+build = "none"
+strip_output = """
+Use default settings!
+"""
+
+[[tests]]
+name = "quadratic_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/quadratic_s.dig"]
+expected = """
+quadratic_s: passed
+"""
+rubric = 10
+
+[[tests]]
+name = "sum_array_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/sum_array_s.dig"]
+expected = """
+sum_array_s: passed
+"""
+rubric = 10
+
+[[tests]]
+name = "find_max_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/find_max_s.dig"]
+expected = """
+find_max_s: passed
+"""
+rubric = 10
+
+[[tests]]
+name = "fact_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/fact_s.dig"]
+expected = """
+fact_s: passed
+"""
+rubric = 10
+
+[[tests]]
+name = "fib_rec_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/fib_rec_s.dig"]
+expected = """
+fib_rec_s: passed
+"""
+rubric = 10
+
+[[tests]]
+name = "stolower_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/stolower_s.dig"]
+expected = """
+stolower_s: passed
+"""
+rubric = 10
