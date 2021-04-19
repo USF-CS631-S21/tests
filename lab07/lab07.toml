@@ -1,0 +1,13 @@
+[project]
+build = "none"
+strip_output = """
+Use default settings!
+"""
+
+[[tests]]
+name = "first_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/first_s.dig"]
+expected = """
+first_s: passed
+"""
+rubric = 10
