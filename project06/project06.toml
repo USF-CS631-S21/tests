@@ -1,0 +1,69 @@
+[project]
+build = "none"
+strip_output = """
+Use default settings!
+"""
+
+[[tests]]
+name = "0_quadratic_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/0_quadratic_s.dig"]
+expected = """
+0_quadratic_s: passed
+"""
+rubric = 5
+
+[[tests]]
+name = "1_quadratic_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/1_quadratic_s.dig"]
+expected = """
+1_quadratic_s: passed
+"""
+rubric = 5
+
+[[tests]]
+name = "2_max3_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/2_max3_s.dig"]
+expected = """
+2_max3_s: passed
+"""
+rubric = 5
+
+[[tests]]
+name = "3_max3_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/3_max3_s.dig"]
+expected = """
+3_max3_s: passed
+"""
+rubric = 5
+
+[[tests]]
+name = "4_find_max_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/4_find_max_s.dig"]
+expected = """
+4_find_max_s: passed
+"""
+rubric = 5
+
+[[tests]]
+name = "5_find_max_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/5_find_max_s.dig"]
+expected = """
+5_find_max_s: passed
+"""
+rubric = 5
+
+[[tests]]
+name = "6_fib_rec_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/6_fib_rec_s.dig"]
+expected = """
+6_fib_rec_s: passed
+"""
+rubric = 5
+
+[[tests]]
+name = "7_fib_rec_s"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/7_fib_rec_s.dig"]
+expected = """
+7_fib_rec_s: passed
+"""
+rubric = 5
